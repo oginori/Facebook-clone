@@ -1,1 +1,9 @@
 <h2>新規投稿</h2>
+
+<%= form_with(model: @picture, local: true) do |form| %>
+  <div>
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
