@@ -11,7 +11,12 @@
     <td><%= picture.content %></td>
     <td><%= link_to '詳細', picture_path(picture.id) %>
     <td><%= link_to '編集', edit_picture_path(picture.id) %>
+    <td><%= link_to '削除', picture_path(picture.id), method: :delete, data: { confirm: '本当に削除していいですか？' } %>
   </tr>
+<% end %>
 </table>
 
-<% end %>
+
+<p>
+<%= link_to '新規投稿', new_picture_path %>
+</p>
