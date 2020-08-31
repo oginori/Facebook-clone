@@ -17,7 +17,7 @@
     <div class="panel panel-default">
       <div class="panel-body">
 
-    <%= form_with(model: @user, local: true) do |f| %>
+    <%= form_with(model: @user, local: true, class:"new_form") do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name %><br>
       <%= f.label :email %>
@@ -26,7 +26,9 @@
       <%= f.password_field :password %><br>
       <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation %>
-      <%= f.submit "Create New Account", class:"btn btn-primary" %>
+      <div class="button">
+      <%= f.submit "Create New Account", class:"btn btn-success" %>
+      </div>
     <% end %>
       </div>
     </div>

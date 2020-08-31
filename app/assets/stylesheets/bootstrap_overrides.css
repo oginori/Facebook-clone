@@ -8,12 +8,20 @@
   margin: 0 auto;
 }
 
-.panel-body form {
+.panel-body .new_form {
   height: 400px;
 }
 
-.btn-primary {
+.btn-primary, .btn-success {
   padding: 0 16px;
   height: 48px;
   font-size: 17px;
+  line-height: 2.5;
+}
+
+
+.button {
+  text-align: center;
+  display: block;
+  margin-top: 15px;
 }
