@@ -1,0 +1,19 @@
+.label .label-default {
+  font-size: 30px;
+}
+
+.panel-body {
+  width: 400px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.panel-body form {
+  height: 400px;
+}
+
+.btn-primary {
+  padding: 0 16px;
+  height: 48px;
+  font-size: 17px;
+}
