@@ -1,8 +1,23 @@
-<h1>詳細画面</h1>
-<p>内容：<%= @picture.content %></p>
-<p>画像：
-  <%= image_tag @picture.image.url %>
-</p>
+<h3><%= @picture.updated_at.strftime('%Y/%m/%d %H:%M:%S') %></h3>
 
-<%= link_to 'Edit', edit_picture_path(@picture) %>
-<%= link_to '一覧に戻る', pictures_path %>
+<div class="row">
+  <div class="col-sm-6 col-md-12">
+    <div class="thumbnail">
+      <%= link_to 'Edit', edit_picture_path(@picture) %>
+      <%= image_tag @picture.image.url %>
+      <div class="caption">
+        <p>
+        <%= @picture.content %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav aria-label="...">
+  <ul class="pager">
+    <li class="previous"><%= link_to '← Back', pictures_path %></li>
+  </ul>
+</nav>
+
+</div>

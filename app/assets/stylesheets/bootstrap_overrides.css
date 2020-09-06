@@ -19,9 +19,47 @@
   line-height: 2.5;
 }
 
-
 .button {
   text-align: center;
   display: block;
   margin-top: 15px;
+}
+
+.row {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.thumbnail {
+  margin: 0 auto;
+  text-align: center;
+}
+.thumbnail img {
+  width: 60%;
+  margin: 30px auto;
+}
+.caption {
+  margin: 30px;
+}
+.caption p {
+  margin: 30px 20px;
+}
+
+.nav-pills {
+  margin: 40px auto;
+  text-align: center;
+  width: 500px;
+}
+
+.nav-pills li {
+  width: 120px;
+}
+
+.nav-tabs li button {
+  margin-left: 10px;
+}
+
+
+.nav-stacked {
+  width: 280px;
 }

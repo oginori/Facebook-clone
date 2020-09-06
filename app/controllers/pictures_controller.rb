@@ -1,4 +1,5 @@
 class PicturesController < ApplicationController
+  before_action :login_judgment
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
   def index
     @pictures = Picture.all
@@ -9,16 +10,16 @@ class PicturesController < ApplicationController
   end
 
   def create
-    @picture = current_user.pictures.build(picture_params)
-    if params[:back]
-      render :new
-    else
-      if @picture.save
-        redirect_to pictures_path, notice: "投稿しました"
-      else
+      @picture = current_user.pictures.build(picture_params)
+      if params[:back]
         render :new
+      else
+        if @picture.save
+          redirect_to pictures_path, notice: "投稿しました"
+        else
+          render :new
+        end
       end
-    end
   end
 
   def show

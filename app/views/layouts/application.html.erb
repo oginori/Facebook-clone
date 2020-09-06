@@ -12,7 +12,7 @@
     <header>
       <div class="header-nav">
         <h3 class="title">facebook</h3>
-        <div class="nav">
+        <div class="navi">
         <% if logged_in? %>
           <%= link_to "Profile", user_path(current_user.id) %>
           <%= link_to "Logout", session_path(current_user.id), method: :delete %>

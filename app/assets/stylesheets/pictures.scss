@@ -6,3 +6,72 @@
   width: 50px;
   height: 50px;
 }
+
+.left-nav {
+  float: left;
+  width: 280px;
+}
+
+.main-contents {
+  width: 565px;
+  padding: 32px;
+  margin: 0;
+  float: left;
+}
+
+.new-post {
+  text-align: right;
+  margin: 30px;
+}
+
+.wrappter {
+  clear:both;
+}
+
+.post-picture img{
+  width: 100%;
+}
+
+.post-detail {
+  margin: 30px;
+  clear:both;
+}
+
+.post-detail div {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100px;
+  float: left;
+  text-align: center;
+}
+
+.icons div {
+  padding: 10px;
+  width: 185px;
+  float: left;
+  text-align: center;
+}
+
+.icons div:hover {
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.new_post_wrap {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#picture_content {
+  width: 450px;
+  height: 80px;
+  padding: 5px;
+}
+
+#picture_image {
+  margin: 10px 0;
+}
+
+.create_post {
+  margin: 10px 0;
+}

@@ -9,14 +9,17 @@
     </ul>
   </div>
   <% end %>
-  <div>
-    <%= form.label :content %>
-    <%= form.text_field :content %>
-    <%= form.label :image %>
+  <div class="new_post_wrap">
+    <div>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
+    </div>
+    <div>
     <%= image_tag(@picture.image.url) if @picture.image && @picture.image.url %>
+    </div>
     <%= form.file_field :image %>
     <%= form.hidden_field :image_cache %>
+  <%= form.submit "投稿する",  class:"create_post" %>
   </div>
-  <%= form.submit %>
 <% end %>
 <%= link_to "ブログ一覧画面にもどる", pictures_path %>
